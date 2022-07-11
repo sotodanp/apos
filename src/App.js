@@ -7,8 +7,7 @@ import Footer from './components/Footer';
 import { Route, Routes } from 'react-router-dom'
 import Services from './Services';
 import Contact from './Contact';
-import { useParams } from "react-router-dom"
-import { service } from './components/Services/data';
+
 
 import ServePage from './components/Services/ServePage';
 

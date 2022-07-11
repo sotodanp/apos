@@ -9,6 +9,9 @@ import { service } from "./data";
 
 const ServePage = () => {
 
+    function capitalizeFirstLetter(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
 
 
     const { workType } = useParams();
@@ -17,7 +20,7 @@ const ServePage = () => {
 
     return (
         <div className='serviceTitle'>
-            <h2>{workType}</h2>
+            <h2>{capitalizeFirstLetter(workType)}</h2>
             <div className='serviceBox'>
                 <div className='serviceImg'>
                     <Carousel src={serviceType.imgs[0]} src2={serviceType.imgs[1]} src3={serviceType.imgs[2]} />
@@ -27,7 +30,7 @@ const ServePage = () => {
                     <ul className='ServiceBtn'>
                         {service.map((serv, index) => {
                             return (
-                                <div key={index} className='listItem'><Button href={`/services/${serv.type}`} text={serv.type} /></div>
+                                <div key={index} className='listItem'><Button href={`/services/${serv.type}`.toLowerCase()} text={serv.type} /></div>
                             )
                         })}
 
