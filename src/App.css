@@ -1,38 +1,673 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font: 500 100%/1.5 system-ui;
+    background-color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+    width: fit-content;
+    text-decoration: underline;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+    display: flex;
+    justify-content: center;
+    border: 0;
+    padding-top: 40px;
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header h2 {
+    color: #0F3057;
+    flex: 2;
+    margin-left: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.header span {
+    flex: 1;
+    padding-top: .45rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.phone {
+    color: #0F3057;
+}
+
+.phone:hover {
+    color: #0F3057;
+    font-weight: 700;
+}
+
+.navBar {
+    display: flex;
+    justify-content: center;
+    background-color: #00587A;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.buttonNav {
+    color: white;
+    justify-content: center;
+    background-color: #00587A;
+    border: none;
+}
+
+.buttonNav a {
+    color: white;
+    background-color: #00587A;
+    padding: 10px 25px;
+    font-size: 1rem;
+}
+
+.buttonNav :link {
+    text-decoration: none;
+    color: white;
+}
+
+.buttonNav :hover {
+    filter: brightness(85%);
+    color: white;
+}
+
+.container img {
+    height: 50vh;
+    width: 100%;
+}
+
+.aboutUs {
+    display: flex;
+    margin-top: 20px;
+}
+
+.aboutInfo {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+}
+
+.aboutInfo p {
+    display: block;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100;
+}
+
+.headline h2 {
+    margin-top: 20px;
+    text-align: center;
+    color: #0F3057;
+}
+
+.headline p {
+    text-align: center;
+    color: #0F3057;
+    font-weight: 600;
+}
+
+.Ph {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.box h4 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.phoneLink a {
+    color: #0F3057;
+    width: fit-content;
+    text-decoration: underline;
+}
+
+.phoneLink a:hover {
+    width: fit-content;
+    text-decoration: underline;
+}
+
+
+
+@media(min-width: 700px) {
+    .rowS {
+        column-count: 3;
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    .rowS div {
+        width: 60%;
+    }
+
+}
+
+@media(min-width: 925px) {
+    .servCol {
+        column-count: 3;
+        font-size: x-large;
+        font-weight: 700;
+        border-style: double;
+    }
+
+    .servCol div {
+        border-style: double;
+    }
+
+}
+
+.servCol {
+    font-size: x-large;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-style: double;
+}
+
+.servCol div {
+    border-style: double;
+    padding-bottom: 1rem;
+}
+
+.rowS {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.rowS div {
+    text-align: center;
+    font-size: x-large;
+    font-weight: 700;
+    border-left: 4px;
+    border: left 4px;
+    border-style: double;
+    margin-bottom: 1rem;
+}
+
+@media(min-width: 925px) {
+    .service {
+        height: 17rem;
+    }
+}
+
+.service img {
+    height: 60%;
+    width: 60%;
+    object-fit: cover;
+    -webkit-filter: brightness(50%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.service img:hover {
+    -webkit-filter: brightness(100%);
+}
+
+
+
+.button {
+    background: #008891;
+    color: white;
+    border: 2px solid #008891;
+    font-size: large;
+    padding: 0px 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0px 20px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.button:hover {
+    background-color: white;
+    color: #008891;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.button a {
+    padding: 1rem;
+}
+
+.allServices {
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+.allServices h2,
+a {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    color: #0F3057;
+}
+
+.allServices a:hover {
+    color: #0F3057;
+}
+
+.column {
+    column-count: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.column button {
+    background-color: #0F3057;
+    border-color: grey;
+}
+
+.column button:hover {
+    font-weight: bold;
+    background-color: #008891;
+    color: #0F3057;
+    border-color: #0F3057;
+}
+
+.license {
+    background-image: linear-gradient(to right top, #fefefe, #fbfbfb, #f8f8f8, #f6f6f6, #f3f3f3);
+}
+
+.lic {
+    display: block;
+    text-align: center;
+}
+
+.lic h2 {
+    width: 70%;
+    margin-left: 15%;
+}
+
+.contactForm {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: white;
+}
+
+
+.contactForm form {
+    padding: 1rem;
+    background-color: black;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+.contactForm div {
+    background-color: black;
+    width: 100%;
+    color: #0F3057;
+}
+
+.contactForm label {
+    color: white;
+    width: 100%;
+    text-align: left;
+}
+
+.contactForm input {
+    background-image: linear-gradient(to right top, #fefefe, #fbfbfb, #f8f8f8, #f6f6f6, #f3f3f3);
+    border-style: groove;
+    width: 460px;
+    display: flex;
+
+}
+
+.contactd {
+    display: flex;
+    justify-content: center;
+}
+
+.contactSubmit {
+    margin-top: 1rem;
+    color: white;
+    background-color: #008891;
+    border-color: grey;
+    font-weight: 700;
+}
+
+.contactSubmit:hover {
+    font-weight: bold;
+    background-color: #008891;
+    color: #0F3057;
+    border-color: #0F3057;
+}
+
+@media(max-width: 475px) {
+    .contactForm input {
+        display: flex;
+        justify-content: center;
+        width: 350px;
+    }
+
+}
+
+.serviceContainer {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.serviceContainer h2 {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.serviceBox {
+    box-sizing: border-box;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.serviceBox:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 800px) {
+    .serviceBox {
+        margin: 0;
+    }
+}
+
+
+.serviceImg {
+    margin-top: 2rem;
+    float: left;
+    width: 70%;
+    padding: 0;
+}
+
+.serviceDescription {
+    margin-top: 2rem;
+    float: left;
+    width: 30%;
+    padding-right: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .serviceBox {
+        margin: 0;
+    }
+
+    .serviceDescription {
+        width: 100%;
+    }
+
+    .serviceImg {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .serviceBox {
+        margin: 0;
+    }
+
+    .serviceDescription {
+        width: 100%;
+    }
+
+    .serviceImg {
+        width: 100%;
+    }
+
+    .serviceBtn {
+        width: 100%;
+    }
+}
+
+.serviceP {
+    text-align: left;
+    margin-top: 1rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.serviceP h4 {
+    text-align: center;
+}
+
+.serviceBtn div {
+    display: flex;
+    width: 100%;
+}
+
+.listItem {
+    background-color: white;
+    width: 100%;
+}
+
+.listItem button {
+    background-color: #0F3057;
+    display: flex;
+    width: 100%;
+}
+
+.listItem button:hover {
+    background-color: #00587A;
+    display: flex;
+    width: 100%;
+}
+
+.listItem button,
+a {
+    color: white;
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+}
+
+.listItem button a {
+    color: white;
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+
+}
+
+.listItem button,
+a:hover {
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    margin-left: 0%;
+    color: #0F3057;
+    border-color: white;
+
+}
+
+
+.serviceTitle h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    font-weight: 700;
+}
+
+.AboutContainer button {
+    width: 15rem;
+}
+
+.AboutContainer a {
+    padding: 0;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+@media(min-width: 1000px) {
+
+    .AboutContainer {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .AboutContainer h2 {
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    .aboutCol {
+        display: flexbox;
+        column-count: 2;
+        margin-top: 5px;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 2rem;
+    }
+
+    .aboutCol p {
+        width: fit-content;
+        font: 500 100%/1.5 system-ui;
+    }
+
+    .aboutCol img {
+        display: flex;
+        height: 500px;
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 1000px) {
+    .AboutContainer {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .AboutContainer h2 {
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    .aboutCol {
+        display: flexbox;
+        column-count: 1;
+        margin-top: 5px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .aboutCol p {
+        width: fit-content;
+        font: 500 100%/1.5 system-ui;
+    }
+
+    .aboutCol img {
+        display: none;
+    }
+
+}
+
+.contactContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.contactContainer h2 {
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+@media(min-width: 800px) {
+    .contactColumn {
+        margin-top: 3rem;
+        column-count: 2;
+        margin-bottom: 3rem;
+    }
+}
+
+@media(max-width: 800px) {
+    .contactColumn {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+
+.contactEmail h3 {
+    text-align: center;
+}
+
+.emailButton {
+    padding: 3rem;
+    background-image: linear-gradient(to right top, #008891, #5fa0b5, #9bb8ce, #ccd2e0, #f1f1f1);
+    text-align: center;
+    backface-visibility: hidden;
+    display: inline-flexbox;
+    border-radius: 2px;
+    color: black;
+    font-size: 028px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.emailButton:hover {
+    background-image: linear-gradient(to right top, #008891, #5798ad, #8ca8be, #b4bac8, #d0d0d0);
+    -webkit-transition: all 0.5s 0s ease, all 0.5s 0s ease;
+    -moz-transition: all 0.5s 0s ease, all 0.5s 0s ease;
+    -o-transition: all 0.5s 0s ease, all 0.5s 0s ease;
+    transition: all 0.5s 0s ease, all 0.5s 0s ease;
+}
+
+.emailButton a {
+    font-weight: 600;
+    font-size: large;
+    color: black;
+}
+
+.emailButton a:hover {
+    color: black;
+    font-size: large;
+    font-weight: 700;
+    text-decoration: underline;
+    -webkit-transition: all 0.5s 0s ease, all 0.5s 0s ease;
+    -moz-transition: all 0.5s 0s ease, all 0.5s 0s ease;
+    -o-transition: all 0.5s 0s ease, all 0.5s 0s ease;
+    transition: all 0.5s 0s ease, all 0.5s 0s ease;
+}
+
+
+footer {
+    margin-top: 50px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+footer a {
+    color: black
 }
